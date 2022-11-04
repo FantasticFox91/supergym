@@ -1,0 +1,19 @@
+.logo {
+  margin-top: 20px;
+
+  @include vp-1023 {
+    margin-top: 9px;
+  }
+}
+
+.logo__icon {
+  @include vp-1023 {
+    width: 83px;
+    height: 29px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+    height: 25px;
+  }
+}

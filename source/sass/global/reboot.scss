@@ -13,11 +13,11 @@ body {
 
 html {
   font-style: normal;
-  font-weight: 400;
+  font-weight: $lh-default;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  line-height: $lh-default;
+  font-family: $ff-main;
+  color: $color-default-white;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

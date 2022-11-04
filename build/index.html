@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supergym - фитнесс центр в Омске">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>Supergym - фитнесс центр</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Supergym - фитнесс центр</h1>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__top">
+            <div class="logo">
+              <svg class="logo__icon" width="122" height="44" viewBox="0 0 122 44" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </div>
+            <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+          </div>
+          <div class="header__description">
+            <p class="header__city">омск</p>
+            <h2 class="header__heading">Фитнес <br> центр</h2>
+            <ul class="header__list">
+              <li class="header__item">Тренажёрный зал</li>
+              <li class="header__item">Групповые занятия</li>
+              <li class="header__item">Кардио-зона</li>
+            </ul>
+            <button class="header__button" type="button">Купить абонемент</button>
+            <picture class="header__image header__image-container">
+              <source type="image/webp" srcset="./img/main-block.webp, ./img/main-block@2x.webp 2x" width="550" height="556">
+
+              <img class="header__image " src="img/main-block.jpg" srcset="./img/main-block.@2x.jpg" alt="Мужчина с хорошей физической форме в футболке со знаком супермена." width="550" height="556">
+            </picture>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="container footer__container">
+        </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
