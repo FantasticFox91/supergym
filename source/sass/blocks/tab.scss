@@ -1,0 +1,273 @@
+.tab__buttons {
+  position: relative;
+  display: flex;
+  margin-bottom: 39px;
+  gap: 46px;
+  justify-content: center;
+
+  &::after {
+    @include pseudo(341px, 2px);
+    bottom: 0;
+    background-color: $color-gray-opacity;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 44px;
+    gap: 55px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    margin-bottom: 34px;
+    justify-content: start;
+
+    &::after {
+      width: 290px;
+    }
+  }
+}
+
+.tab__button {
+  position: relative;
+  padding: 0;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  opacity: 0.5;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    @include pseudo(0%, 2px);
+    background-color: $color-transparent;
+  }
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.tab__button:not(:last-child) {
+  margin-right: 38px;
+  padding-right: 7px;
+}
+
+.tab__button--active {
+  opacity: 1;
+  border-color: $color-crimson;
+
+  &::after {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $color-crimson;
+  }
+}
+
+.tab__list {
+  position: relative;
+  display: flex;
+  gap: 54px;
+  z-index: 2;
+
+  @include vp-1023 {
+    margin-right: 14px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    gap: 49px;
+    margin-right: 0;
+  }
+}
+
+.tab__content {
+  position: relative;
+  top: 7px;
+  left: 7px;
+  min-width: 346px;
+  max-width: 346px;
+  max-height: 434px;
+  display: flex;
+  padding: 55px 76px 67px;
+  background-color: $color-default-white;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+
+  @include vp-1023 {
+    min-width: 428px;
+    max-width: 428px;
+    min-height: 434px;
+    padding: 56px 110px 67px 110px;
+  }
+
+  @include vp-767 {
+    min-width: auto;
+    min-height: 370px;
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    padding: 44px 34px 44px 34px;
+  }
+}
+
+.tab__wrapper {
+  position: relative;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.tab__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 448px;
+  background-color: $color-default-white;
+  z-index: -1;
+
+  @include vp-1023 {
+    min-width: 442px;
+    height: 448px;
+  }
+
+  @include vp-767 {
+    min-width: auto;
+    width: 100%;
+    height: 384px;
+  }
+}
+
+.tab__wrapper:hover {
+  .tab__border {
+    background: $blue-to-red;
+  }
+}
+
+.tab__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+
+  @include vp-1023 {
+    line-height: 29px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.tab__subheading {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-chambray;
+
+  @include vp-767 {
+    margin-bottom: 53px;
+  }
+}
+
+.tab__prices {
+  position: relative;
+  margin-bottom: 34px;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.tab__price {
+  position: relative;
+  margin: 0;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: $color-egyptian-blue;
+  z-index: 2;
+
+  @include vp-767 {
+    margin-left: 3px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.tab__currency {
+  padding-right: 44px;
+
+  &::after {
+    @include pseudo(30px, 42px);
+    background: url("../img/svg/ruble.svg");
+    top: calc(50% - 21px);
+    right: 0;
+  }
+
+  @include vp-767 {
+    padding-right: 34px;
+
+    &::after {
+      top: calc(50% - 16px);
+      width: 24px;
+      height: 33px;
+      background-size: cover;
+    }
+  }
+}
+
+.tab__price--background {
+  position: absolute;
+  margin-left: 0;
+  padding-right: 0;
+  top: -53px;
+  left: -20px;
+  font-size: 100px;
+  line-height: 150px;
+  color: $color-whisper;
+  z-index: 1;
+
+  @include vp-767 {
+    top: -44px;
+    left: -17px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+}
+
+.tab__content-button {
+  width: 100%;
+  padding: 25px 36px 23px;
+  background-color: $color-transparent;
+  border: 2px solid $color-saphire;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
+
+  @include hover {
+    color: $color-default-white;
+    padding: 27px 38px 25px;
+    border: none;
+    background: $red-to-blue;
+  }
+}
+

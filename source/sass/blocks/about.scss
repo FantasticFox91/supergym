@@ -1,0 +1,156 @@
+.about {
+  color: $color-saphire;
+}
+
+.about__container {
+  display: flex;
+  padding-left: 163px;
+  padding-bottom: 120px;
+  justify-content: space-between;
+
+  @include vp-1439 {
+    padding-left: 163px;
+    padding-bottom: 235px;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 68px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about__description {
+  max-width: 355px;
+  padding-top: 39px;
+
+  @include vp-1023 {
+    max-width: none;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.about__heading {
+  margin: 0;
+  margin-bottom: 7px;
+  letter-spacing: 0.03em;
+
+  @include fonts(48px, 58px, 600, $color-saphire, $ff-secondary);
+
+  @include vp-1023 {
+    margin-right: 16px;
+    margin-bottom: -1px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
+    margin-right: 0;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.about__subheading {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1023 {
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
+}
+
+.about__text {
+  margin: 0;
+  font-weight: 300;
+
+  @include vp-1023 {
+    max-width: 505px;
+  }
+
+  @include vp-767 {
+    padding-right: 30px;
+  }
+}
+
+.about__text:last-child {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include vp-1023 {
+    margin-bottom: 43px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
+}
+
+.about__image {
+  @include vp-1023 {
+    width: 100%;
+    max-height: 345px;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    min-height: 313px;
+  }
+}
+
+.about__media {
+  position: relative;
+  padding-left: 63px;
+  padding-bottom: 115px;
+
+  @include vp-1023 {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    display: flex;
+    padding-bottom: 38px;
+    flex-direction: column;
+    gap: 72px;
+  }
+}
+
+.about__video {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  @include vp-1023 {
+    bottom: 32px;
+    left: calc(50% - 133px);
+  }
+
+  @include vp-767 {
+    position: relative;
+    left: 0;
+  }
+}

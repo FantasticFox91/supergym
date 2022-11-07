@@ -1,12 +1,16 @@
 .header {
   @include fonts(26px, 31px, 600, $color-default-white, $ff-secondary);
+
+  margin-bottom: 120px;
   background: $conic-gradient-desktop;
 
   @include vp-1023 {
+    margin-bottom: 62px;
     background: $conic-gradient-tablet;
   }
 
   @include vp-767 {
+    margin-bottom: 64px;
     background: $conic-gradient-mobile;
   }
 }
@@ -15,6 +19,10 @@
   display: grid;
   grid-template-rows: 44px 1fr;
   padding-top: 23px;
+
+  @include vp-1439 {
+    padding-top: 23px;
+  }
 
   @include vp-1023 {
     gap: 12px;

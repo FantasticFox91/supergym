@@ -1,0 +1,18 @@
+.heading {
+  @include fonts(54px, 65px, 600, $color-saphire, $ff-secondary);
+
+  margin: 0;
+  margin-right: 5px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

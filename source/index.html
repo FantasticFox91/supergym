@@ -44,12 +44,178 @@
             <picture class="header__image header__image-container">
               <source type="image/webp" srcset="./img/main-block.webp, ./img/main-block@2x.webp 2x" width="550" height="556">
 
-              <img class="header__image " src="img/main-block.jpg" srcset="./img/main-block.@2x.jpg" alt="Мужчина с хорошей физической форме в футболке со знаком супермена." width="550" height="556">
+              <img class="header__image " src="img/main-block.jpg" srcset="./img/main-block@2x.jpg" alt="Мужчина с хорошей физической форме в футболке со знаком супермена." width="550" height="556">
             </picture>
           </div>
         </div>
       </header>
       <main>
+        <section class="about">
+          <h2 class="visually-hidden">Про тренажерный зал</h2>
+          <div class="container about__container">
+            <div class="about__description">
+              <h3 class="about__heading">Тренажерный зал</h3>
+              <p class="about__subheading">Просторный зал площадью 900 кв/м</p>
+              <p class="about__text">
+                Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p class="about__text">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="about__media">
+              <picture>
+                <source type="image/webp" srcset="./img/gym-2.webp, ./img/gym-2@2x.webp 2x" width="660" height="401">
+
+                <img class="about__image " src="img/gym-2.jpg" srcset="./img/gym-2@2x.jpg" alt="Мужчина с хорошей физической форме в футболке со знаком супермена." width="660" height="401">
+              </picture>
+              <div class="about__video video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                  <div class="video__overlay"></div>
+                  <picture class="video__image">
+                    <source type="image/webp" srcset="./img/gym-1.webp, ./img/gym-1@2x.webp 2x" width="364" height="228">
+
+                    <img class="about__image video__image" src="img/gym-1.jpg" srcset="./img/gym-1@2x.jpg" alt="Мужчина с хорошей физической форме в футболке со знаком супермена." width="364" height="228">
+                  </picture>
+                </a>
+                <div class="video__border">
+                  <button class="video__button" type="button">
+                    <span class="visually-hidden">Воспроизвести видео</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pass">
+          <div class="container pass__container">
+            <h2 class="heading pass__heading">Абонементы</h2>
+            <div class="tab">
+              <div class="tab__buttons">
+                <button class="tab__button tab__button--active" data-plan="1">1 месяц</button>
+                <button class="tab__button" data-plan="6">6 месяцев</button>
+                <button class="tab__button" data-plan="12">12 месяцев</button>
+              </div>
+              <div class="tab__list" data-list="1">
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">С тренером</h3>
+                    <p class="tab__subheading">12 занятий</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">5000</p>
+                      <p class="tab__price tab__price--background">5000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Дневной</h3>
+                    <p class="tab__subheading">с 8:00 до 17:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">1700</p>
+                      <p class="tab__price tab__price--background">1700</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Полный день</h3>
+                    <p class="tab__subheading">с 8:00 до 22:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__price tab__currency">2700</p>
+                      <p class="tab__price tab__price--background">2700</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__list" data-list="6" style="display: none;">
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">С тренером</h3>
+                    <p class="tab__subheading">12 занятий</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">25000</p>
+                      <p class="tab__price tab__price--background">25000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Дневной</h3>
+                    <p class="tab__subheading">с 8:00 до 17:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">9500</p>
+                      <p class="tab__price tab__price--background">9500</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Полный день</h3>
+                    <p class="tab__subheading">с 8:00 до 22:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__price tab__currency">14000</p>
+                      <p class="tab__price tab__price--background">14000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__list" data-list="12" style="display: none;">
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">С тренером</h3>
+                    <p class="tab__subheading">12 занятий</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">55000</p>
+                      <p class="tab__price tab__price--background">55000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Дневной</h3>
+                    <p class="tab__subheading">с 8:00 до 17:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__currency">18000</p>
+                      <p class="tab__price tab__price--background">18000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+                <div class="tab__wrapper">
+                  <div class="tab__border"></div>
+                  <div class="tab__content">
+                    <h3 class="tab__heading">Полный день</h3>
+                    <p class="tab__subheading">с 8:00 до 22:00</p>
+                    <div class="tab__prices">
+                      <p class="tab__price tab__price tab__currency">30000</p>
+                      <p class="tab__price tab__price--background">30000</p>
+                    </div>
+                    <button class="tab__content-button" type="button">купить абонемент</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="./img/plates.webp, ./img/plates@2x.webp 2x" width="321" height="384">
+
+              <img class="pass__image " src="img/plates.png" srcset="./img/plates@2x.jpg" alt="Розовые блины для штанги" width="321" height="384">
+            </picture>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container footer__container">

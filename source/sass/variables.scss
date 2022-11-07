@@ -22,17 +22,21 @@ $color-chambray:                    #495a7d;
 $color-light-slate-gray:            #74819c;
 $color-spindle:                     #b6bdcc;
 $color-dark-gray:                   #afafaf;
+$color-gray-opacity:                rgba(120, 120, 120, 0.2);
 $color-whisper:                     #e8e8e8;
 $color-ghost-white:                 #f8f9fc;
 $color-torch-red:                   #ed0233;
 $color-crimson:                     #d10a42;
+$color-dark-cerulean-opacity:       rgba(20, 54, 122, 0.5);
 
 // Gradient
-
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $conic-gradient-desktop:            conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 $conic-gradient-tablet:             conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
 $conic-gradient-mobile:             conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$blue-to-red:                       linear-gradient(44.89deg, #003d85 25.38%, #B80027 74.89%);
+$red-to-blue-opactiy:               linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+$red-to-blue:                       linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 
 // Typography
 // ---------------------------------
