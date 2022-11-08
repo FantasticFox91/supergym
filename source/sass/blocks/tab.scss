@@ -98,11 +98,17 @@
   max-width: 346px;
   max-height: 434px;
   display: flex;
-  padding: 55px 76px 67px;
+  padding: 55px 69px 67px;
   background-color: $color-default-white;
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  border: 7px solid $color-default-white;
+
+  &:hover {
+    border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image-slice: 1;
+  }
 
   @include vp-1023 {
     min-width: 428px;
@@ -114,44 +120,7 @@
   @include vp-767 {
     min-width: auto;
     min-height: 370px;
-    width: calc(100% - 14px);
-    height: calc(100% - 14px);
     padding: 44px 34px 44px 34px;
-  }
-}
-
-.tab__wrapper {
-  position: relative;
-
-  @include vp-767 {
-    width: 100%;
-  }
-}
-
-.tab__border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 360px;
-  height: 448px;
-  background-color: $color-default-white;
-  z-index: -1;
-
-  @include vp-1023 {
-    min-width: 442px;
-    height: 448px;
-  }
-
-  @include vp-767 {
-    min-width: auto;
-    width: 100%;
-    height: 384px;
-  }
-}
-
-.tab__wrapper:hover {
-  .tab__border {
-    background: $blue-to-red;
   }
 }
 
