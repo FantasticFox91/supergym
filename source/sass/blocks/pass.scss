@@ -2,16 +2,18 @@
   position: relative;
   margin-bottom: 120px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 133px;
   background-color: $color-ghost-white;
   color: $color-saphire;
 
   @include vp-1023 {
+    margin-bottom: 100px;
     padding-top: 101px;
     padding-bottom: 114px;
   }
 
   @include vp-767 {
+    margin-bottom: 70px;
     padding-top: 64px;
     padding-bottom: 84px;
   }
